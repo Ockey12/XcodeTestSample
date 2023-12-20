@@ -1,10 +1,3 @@
-//
-//  XcodeTestSampleTests.swift
-//  XcodeTestSampleTests
-//
-//  Created by オナガ・ハルキ on 2023/12/21.
-//
-
 import XCTest
 @testable import XcodeTestSample
 
