@@ -16,6 +16,8 @@
 		ACAE31222B335400002DCDEC /* XcodeTestSampleTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE31212B335400002DCDEC /* XcodeTestSampleTests.swift */; };
 		ACAE312C2B335400002DCDEC /* XcodeTestSampleUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE312B2B335400002DCDEC /* XcodeTestSampleUITests.swift */; };
 		ACAE312E2B335400002DCDEC /* XcodeTestSampleUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE312D2B335400002DCDEC /* XcodeTestSampleUITestsLaunchTests.swift */; };
+		ACFAD8122B34862C008CB06B /* TargetMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAD8112B34862C008CB06B /* TargetMethods.swift */; };
+		ACFAD8142B348B11008CB06B /* PasswordValidatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACFAD8132B348B11008CB06B /* PasswordValidatorTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,8 @@
 		ACAE31272B335400002DCDEC /* XcodeTestSampleUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = XcodeTestSampleUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAE312B2B335400002DCDEC /* XcodeTestSampleUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeTestSampleUITests.swift; sourceTree = "<group>"; };
 		ACAE312D2B335400002DCDEC /* XcodeTestSampleUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeTestSampleUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		ACFAD8112B34862C008CB06B /* TargetMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TargetMethods.swift; sourceTree = "<group>"; };
+		ACFAD8132B348B11008CB06B /* PasswordValidatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PasswordValidatorTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -100,6 +104,7 @@
 			children = (
 				ACAE310B2B3353FE002DCDEC /* XcodeTestSampleApp.swift */,
 				ACAE310D2B3353FE002DCDEC /* ContentView.swift */,
+				ACFAD8112B34862C008CB06B /* TargetMethods.swift */,
 				ACAE310F2B335400002DCDEC /* Assets.xcassets */,
 				ACAE31142B335400002DCDEC /* Persistence.swift */,
 				ACAE31162B335400002DCDEC /* XcodeTestSample.xcdatamodeld */,
@@ -120,6 +125,7 @@
 			isa = PBXGroup;
 			children = (
 				ACAE31212B335400002DCDEC /* XcodeTestSampleTests.swift */,
+				ACFAD8132B348B11008CB06B /* PasswordValidatorTests.swift */,
 			);
 			path = XcodeTestSampleTests;
 			sourceTree = "<group>";
@@ -264,6 +270,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACAE31152B335400002DCDEC /* Persistence.swift in Sources */,
+				ACFAD8122B34862C008CB06B /* TargetMethods.swift in Sources */,
 				ACAE31182B335400002DCDEC /* XcodeTestSample.xcdatamodeld in Sources */,
 				ACAE310E2B3353FE002DCDEC /* ContentView.swift in Sources */,
 				ACAE310C2B3353FE002DCDEC /* XcodeTestSampleApp.swift in Sources */,
@@ -275,6 +282,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACAE31222B335400002DCDEC /* XcodeTestSampleTests.swift in Sources */,
+				ACFAD8142B348B11008CB06B /* PasswordValidatorTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
