@@ -2,29 +2,35 @@ import XCTest
 @testable import XcodeTestSample
 
 final class PasswordValidatorTests: XCTestCase {
-    // 10文字以上であること
-    func test_数字が3文字含まれており_合計9文字入力された場合に_falseを返すこと() {
-        XCTAssertFalse(validate(password: "123abcdef"))
-    }
+    func test_パスワードが10文字以上であること() {
+        XCTContext.runActivity(named: "数字が3文字含まれている") { _ in
+            XCTContext.runActivity(named: "合計9文字入力された場合にfalseを返すこと") { _ in
+                XCTAssertFalse(validate(password: "123abcdef"))
+            }
 
-    func test_数字が3文字含まれており_合計10文字入力された場合に_trueを返すこと() {
-        XCTAssertTrue(validate(password: "123abcdefg"))
-    }
+            XCTContext.runActivity(named: "合計10文字入力された場合にtrueを返すこと") { _ in
+                XCTAssertTrue(validate(password: "123abcdefg"))
+            }
 
-    func test_数字が3文字含まれており_合計11文字入力された場合に_trueを返すこと() {
-        XCTAssertTrue(validate(password: "123abcdefgh"))
-    }
+            XCTContext.runActivity(named: "合計11文字入力された場合にtrueを返すこと") { _ in
+                XCTAssertTrue(validate(password: "123abcdefgh"))
+            }
+        }
+    } // パスワードが10文字以上であること
 
-    // 数字を3文字以上含むこと
-    func test_数字以外を9文字と_数字が2文字入力された場合にfalseが返されること() {
-        XCTAssertFalse(validate(password: "abcdefghi12"))
-    }
+    func test_パスワードが数字を3文字以上含むこと() {
+        XCTContext.runActivity(named: "数字以外が9文字入力されている") { _ in
+            XCTContext.runActivity(named: "数字が2文字入力された場合にfalseを返すこと") { _ in
+                XCTAssertFalse(validate(password: "abcdefghi12"))
+            }
 
-    func test_数字以外を9文字と_数字が3文字入力された場合にtrueが返されること() {
-        XCTAssertTrue(validate(password: "abcdefghi123"))
-    }
+            XCTContext.runActivity(named: "数字が3文字入力された場合にtrueを返すこと") { _ in
+                XCTAssertTrue(validate(password: "abcdefghi123"))
+            }
 
-    func test_数字以外を9文字と_数字が4文字入力された場合にtrueが返されること() {
-        XCTAssertTrue(validate(password: "abcdefghi1234"))
-    }
+            XCTContext.runActivity(named: "数字が4文字入力された場合にtrueを返すこと") { _ in
+                XCTAssertTrue(validate(password: "abcdefghi1234"))
+            }
+        }
+    } // パスワードが数字を3文字以上含むこと
 }
