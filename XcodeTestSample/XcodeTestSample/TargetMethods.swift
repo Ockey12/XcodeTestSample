@@ -8,3 +8,9 @@ func validate(password: String) -> Bool {
     let numberOfDigits = password.filter { $0.isNumber }.count
     return 3 <= numberOfDigits
 }
+
+// 2秒待って文字列を返す
+func asyncTaskMethod() async -> String {
+    try? await Task.sleep(nanoseconds: 2 * 1_000_000_000)
+    return "文字列"
+}
