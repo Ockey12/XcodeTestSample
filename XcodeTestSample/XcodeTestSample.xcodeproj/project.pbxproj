@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		AC8D24BE2B35E22C002E1D7C /* AsyncTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = AC8D24BD2B35E22C002E1D7C /* AsyncTests.swift */; };
+		ACA996732B37A489008C6A6D /* ThrowingErrorTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACA996722B37A489008C6A6D /* ThrowingErrorTest.swift */; };
 		ACAE310C2B3353FE002DCDEC /* XcodeTestSampleApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE310B2B3353FE002DCDEC /* XcodeTestSampleApp.swift */; };
 		ACAE310E2B3353FE002DCDEC /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACAE310D2B3353FE002DCDEC /* ContentView.swift */; };
 		ACAE31102B335400002DCDEC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ACAE310F2B335400002DCDEC /* Assets.xcassets */; };
@@ -39,6 +40,7 @@
 
 /* Begin PBXFileReference section */
 		AC8D24BD2B35E22C002E1D7C /* AsyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTests.swift; sourceTree = "<group>"; };
+		ACA996722B37A489008C6A6D /* ThrowingErrorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowingErrorTest.swift; sourceTree = "<group>"; };
 		ACAE31082B3353FE002DCDEC /* XcodeTestSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeTestSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAE310B2B3353FE002DCDEC /* XcodeTestSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeTestSampleApp.swift; sourceTree = "<group>"; };
 		ACAE310D2B3353FE002DCDEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -126,6 +128,7 @@
 			children = (
 				ACFAD8132B348B11008CB06B /* PasswordValidatorTests.swift */,
 				AC8D24BD2B35E22C002E1D7C /* AsyncTests.swift */,
+				ACA996722B37A489008C6A6D /* ThrowingErrorTest.swift */,
 			);
 			path = XcodeTestSampleTests;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ACFAD8142B348B11008CB06B /* PasswordValidatorTests.swift in Sources */,
+				ACA996732B37A489008C6A6D /* ThrowingErrorTest.swift in Sources */,
 				AC8D24BE2B35E22C002E1D7C /* AsyncTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
