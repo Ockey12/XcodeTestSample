@@ -41,6 +41,7 @@
 /* Begin PBXFileReference section */
 		AC8D24BD2B35E22C002E1D7C /* AsyncTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AsyncTests.swift; sourceTree = "<group>"; };
 		ACA996722B37A489008C6A6D /* ThrowingErrorTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThrowingErrorTest.swift; sourceTree = "<group>"; };
+		ACA996742B39CB55008C6A6D /* Nightly.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; name = Nightly.xctestplan; path = TestPlan/Nightly.xctestplan; sourceTree = "<group>"; };
 		ACAE31082B3353FE002DCDEC /* XcodeTestSample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = XcodeTestSample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ACAE310B2B3353FE002DCDEC /* XcodeTestSampleApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = XcodeTestSampleApp.swift; sourceTree = "<group>"; };
 		ACAE310D2B3353FE002DCDEC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 		ACAE30FF2B3353FD002DCDEC = {
 			isa = PBXGroup;
 			children = (
+				ACA996742B39CB55008C6A6D /* Nightly.xctestplan */,
 				ACAE310A2B3353FE002DCDEC /* XcodeTestSample */,
 				ACAE31202B335400002DCDEC /* XcodeTestSampleTests */,
 				ACAE312A2B335400002DCDEC /* XcodeTestSampleUITests */,
