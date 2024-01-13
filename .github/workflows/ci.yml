@@ -16,5 +16,5 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Build
-      run: make build-debug-XcodeTestSample/XcodeTestSample.xcodeproj
+    - name: Get Destinations
+      run: xcodebuild -scheme XcodeTestSample -showdestinations
