@@ -16,5 +16,8 @@ jobs:
     - name: Checkout
       uses: actions/checkout@v2
 
-    - name: Get Destinations
+    - name: Build
       run: xcodebuild build -project XcodeTestSample/XcodeTestSample.xcodeproj -scheme XcodeTestSample -showdestinations
+
+    - name: Test
+      run: xcodebuild test -project XcodeTestSample/XcodeTestSample.xcodeproj -scheme XcodeTestSample
