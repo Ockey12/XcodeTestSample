@@ -1,24 +1,20 @@
-name: iOS Build and Test
+name: CI
 
 on:
   push:
     branches:
-    - 'main'
+    - main
+
+env:
+  DEVELOPER_DIR: /Applications/Xcode_15.2.app
 
 jobs:
   build-and-test:
     runs-on: macos-13
 
     steps:
-    - uses: actions/checkout@v2
-
-    - name: Set up Xcode
-      uses: maxim-lobanov/setup-xcode@v1
-      with:
-        xcode-version: '14.3.1'
+    - name: Checkout
+      uses: actions/checkout@v2
 
     - name: Build
-      run: xcodebuild build -project XcodeTestSample/XcodeTestSample.xcodeproj -scheme XcodeTestSample -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=17.2'
-
-    - name: Test
-      run: xcodebuild test -scheme XcodeTestSample -sdk iphonesimulator -destination 'platform=iOS Simulator,name=iPhone 14 Pro,OS=17.2'
+      run: make build-debug-XcodeTestSample/XcodeTestSample.xcodeproj
