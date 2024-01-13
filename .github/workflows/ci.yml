@@ -17,4 +17,4 @@ jobs:
       uses: actions/checkout@v2
 
     - name: Get Destinations
-      run: xcodebuild -scheme XcodeTestSample -showdestinations
+      run: xcodebuild build -project XcodeTestSample/XcodeTestSample.xcodeproj -scheme XcodeTestSample -showdestinations
